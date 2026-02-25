@@ -2,51 +2,37 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Your Name - Personal Website</title>
+<title>Andy Qiran Wang - Computer Science Student</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-    body {
-    font-family: -apple-system, system-ui, "Segoe UI", sans-serif;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 16px;
-    line-height: 1.6;
-    color: #333;
-    }
-    header {
-    text-align: center;
-    margin-bottom: 40px;
-    }
-    h1 {
-    margin-bottom: 0;
-    }
-    h2 {
-    margin-top: 32px;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 4px;
-    }
-    a {
-    color: #0066cc;
-    text-decoration: none;
-    }
-    a:hover {
-    text-decoration: underline;
-    }
-    .nav {
-    text-align: center;
-    margin-bottom: 24px;
-    font-size: 0.95rem;
-    }
-    .nav a {
-    margin: 0 8px;
-    }
-    .section {
-    margin-bottom: 24px;
-    }
-</style>
+<meta name="description" content="Personal website of Andy Qiran Wang, a Computer Science undergraduate student at Beijing Normal University - Hong Kong Baptist University United International College (UIC).">
+<meta name="keywords" content="Andy Qiran Wang, Computer Science, UIC, Beijing Normal University, Hong Kong Baptist University, Artificial Intelligence, Software Development, Programming">
+<meta name="author" content="Andy Qiran Wang">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wangqiran.github.io/">
+<meta property="og:title" content="Andy Qiran Wang - Computer Science Student">
+<meta property="og:description" content="Personal website of Andy Qiran Wang, a Computer Science undergraduate student at UIC.">
+<meta property="og:image" content="https://wangqiran.github.io/profile-image.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_card">
+<meta property="twitter:url" content="https://wangqiran.github.io/">
+<meta property="twitter:title" content="Andy Qiran Wang - Computer Science Student">
+<meta property="twitter:description" content="Personal website of Andy Qiran Wang, a Computer Science undergraduate student at UIC.">
+<meta property="twitter:image" content="https://wangqiran.github.io/profile-image.jpg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
+    <div class="profile-image">
+        <img src="profile-placeholder.jpg" alt="Andy Qiran Wang" width="150" height="150">
+    </div>
     <h1>Andy Qiran Wang</h1>
     <p>First-year Undergraduate Student, Computer Science (UIC)</p>
     <p>Beijing Normal University – Hong Kong Baptist University United International College</p>
@@ -59,6 +45,7 @@
 <div class="nav">
     <a href="#about">About</a> ·
     <a href="#interests">Interests</a> ·
+    <a href="#skills">Skills</a> ·
     <a href="#projects">Projects</a> ·
     <a href="#experience">Experience</a> ·
     <a href="#contact">Contact</a>
@@ -69,14 +56,12 @@
     <p>
     I am a first-year undergraduate student majoring in Artificial Intelligence, jointly offered by the College of Liberal Arts and Intelligent Systems and the Faculty of Science and Technology at Beijing Normal University-Hong Kong Baptist University (BNBU).
     I maintain a broad interest in computer science, with particular enthusiasm for fields such as software development, algorithms, and artificial intelligence.
-    During my undergraduate studies, I aim to build a solid foundation in core computer science courses while accumulating hands-on experience through personal projects and research practice. 
+    During my undergraduate studies, I aim to build a solid foundation in core computer science courses while accumulating hands-on experience through personal projects and research practice.
     Upon graduation, I plan to apply for computer science-related master's programs at overseas universities, with interests in concentrations such as Software Engineering, Artificial Intelligence, and Data Science.
-    <p>
-    During my undergraduate studies, I aim to build a solid foundation in core CS courses and gain hands-on experience
-    through personal projects and research. I plan to apply for overseas master's programs in computer science
-    (e.g., Software Engineering / Artificial Intelligence / Data Science) after graduation.
     </p>
-    <!-- 这里你可以再加一段中文简介 -->
+    <p>
+    我是UIC计算机科学专业的大一学生，对软件开发、算法和人工智能等领域有浓厚兴趣。在本科阶段，我希望打好计算机科学核心课程的基础，同时通过个人项目和研究实践积累经验。
+    </p>
 </section>
 
 <section id="interests" class="section">
@@ -89,6 +74,30 @@
     </ul>
 </section>
 
+<section id="skills" class="section">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-item">
+            <h4>Programming Languages</h4>
+            <div class="skill-tags">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">JavaScript</span>
+            </div>
+        </div>
+        <div class="skill-item">
+            <h4>Technologies</h4>
+            <div class="skill-tags">
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">Pygame</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Linux</span>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="projects" class="section">
     <h2>Projects</h2>
 
@@ -99,8 +108,7 @@
     <li>Designed the board representation and move validation logic using object-oriented programming, making the code more modular and easy to extend.</li>
     <li>Implemented a user interface that allows players to interact with the board and pieces through mouse clicks, and added basic game state management (start, restart, end).</li>
     <li>This project strengthened my understanding of data structures, game state representation and event-driven programming.</li>
-    <!-- 如果有 GitHub 链接，在下面这一行把 # 换成真实链接 -->
-    <!-- <li>Code: <a href="#" target="_blank">GitHub repository</a></li> -->
+    <li>Code: <a href="https://github.com/wangqiran/chess-game" target="_blank">GitHub repository</a></li>
     </ul>
 
     <!-- 如果以后有新的项目，可以按同样结构复制一份 -->
@@ -127,11 +135,49 @@
 
 <section id="contact" class="section">
     <h2>Contact</h2>
-    <p>Email: <a href="v530034069@mail.uic.edu.cn">v530034069@mail.uic.edu.cn</a></p>
-    <p>GitHub: <a href="https://github.com/wangqiran" target="_blank">https://github.com/wangqiran</a></p>
-    <!-- <p>CV: <a href="cv.pdf" target="_blank">Download (PDF)</a></p> -->
+
+    <div class="contact-options">
+        <div class="contact-form-container">
+            <h3>Send me a message</h3>
+            <form id="contact-form" action="mailto:v530034069@mail.uic.edu.cn" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h3>Other ways to reach me</h3>
+            <p><strong>Email:</strong> <a href="v530034069@mail.uic.edu.cn">v530034069@mail.uic.edu.cn</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/wangqiran" target="_blank">https://github.com/wangqiran</a></p>
+            <p><strong>CV:</strong> <a href="cv.pdf" target="_blank">Download (PDF)</a></p>
+        </div>
+    </div>
 </section>
 
+<!-- Back to top button -->
+<button id="back-to-top" title="Go to top">↑</button>
+
+<footer>
+    <p>&copy; 2024 Andy Qiran Wang. All rights reserved.</p>
+</footer>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
 </body>
 </html>
 
